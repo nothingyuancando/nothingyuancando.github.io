@@ -1,87 +1,73 @@
-<!doctype html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Nothing Yuan Can Do 的个人网站，记录技术、项目和思考。" />
-    <meta name="theme-color" content="#fafafa" />
-    <title>Nothing Yuan Can Do</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="header-inner">
-        <div>
-          <a class="site-title" href="./index.html">Nothing Yuan</a>
-          <p class="site-subtitle">Code, product notes, and small things worth keeping.</p>
-        </div>
-        <nav class="site-nav" aria-label="主导航">
-          <a class="active" href="./index.html">首页</a>
-          <a href="./about.html">关于</a>
-          <a href="./categories.html">分类</a>
-          <a href="https://github.com/nothingyuancando" target="_blank" rel="noreferrer">GitHub</a>
-        </nav>
+---
+layout: default
+---
+
+<div class="search-container">
+  <input
+    type="text"
+    id="search-input"
+    placeholder="search blog posts..."
+    aria-label="搜索文章"
+  >
+  <ul id="results-container"></ul>
+</div>
+
+<script src="{{ site.baseurl }}/js/simple-jekyll-search.min.js"></script>
+<script>
+  window.simpleJekyllSearch = new SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '{{ site.baseurl }}/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{tags}">{title}</a></li>',
+    noResultsText: 'No results found',
+    limit: 10,
+    fuzzy: false
+  });
+</script>
+
+{% if site.posts.size == 0 %}
+  <h2>No post found</h2>
+{% endif %}
+
+<div class="posts">
+  {% for post in paginator.posts %}
+  {% unless post.draft %}
+    <article class="post">
+      <h1>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      </h1>
+
+      <div class="meta">
+        <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
+
+        <ul class="tag">
+          {% for tag in post.tags %}
+          <li>
+            <a href="{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}">{{ tag }}</a>
+          </li>
+          {% endfor %}
+        </ul>
       </div>
-    </header>
 
-    <main class="page">
-      <section class="intro" aria-labelledby="intro-title">
-        <p class="kicker">nothingyuancando.github.io</p>
-        <h1 id="intro-title">记录我做东西、学东西和想清楚事情的过程。</h1>
-        <p>
-          这里会放技术学习笔记、项目复盘、工具搭建记录，以及一些正在成形的小作品。先保持简单、清楚、耐看，再慢慢长出内容。
-        </p>
-      </section>
+      <div class="entry">
+        {{ post.excerpt | strip_html | truncate: 200 }}
+      </div>
 
-      <section aria-labelledby="posts-title">
-        <div class="section-title">
-          <h2 id="posts-title">最新文章</h2>
-          <span>Latest Posts</span>
-        </div>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endunless %}
+  {% endfor %}
+</div>
 
-        <article class="post-item">
-          <h3><a href="./posts/build-github-pages-site.html">零基础搭建自己的 github.io 个人网站</a></h3>
-          <div class="post-meta">
-            <time datetime="2026-06-26">2026-06-26</time>
-            <a href="./categories.html#tutorial">tutorial</a>
-          </div>
-          <p>
-            从空仓库开始，用最简单的静态文件搭建一个可以直接部署到 GitHub Pages 的个人网站。
-          </p>
-          <a class="read-more" href="./posts/build-github-pages-site.html">阅读全文</a>
-        </article>
-
-        <article class="post-item">
-          <h3><a href="./posts/portfolio-notes.html">个人作品集应该放些什么</a></h3>
-          <div class="post-meta">
-            <time datetime="2026-06-26">2026-06-26</time>
-            <a href="./categories.html#notes">notes</a>
-          </div>
-          <p>
-            作品集不只是项目链接列表，更像一份持续更新的工作档案：讲清楚问题、过程、取舍和结果。
-          </p>
-          <a class="read-more" href="./posts/portfolio-notes.html">阅读全文</a>
-        </article>
-
-        <article class="post-item">
-          <h3><a href="./posts/projects-index.html">我的项目索引</a></h3>
-          <div class="post-meta">
-            <time datetime="2026-06-26">2026-06-26</time>
-            <a href="./categories.html#projects">projects</a>
-          </div>
-          <p>
-            把做过的项目集中整理起来，方便以后补充截图、仓库地址、在线演示和复盘文章。
-          </p>
-          <a class="read-more" href="./posts/projects-index.html">阅读全文</a>
-        </article>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <span>Copyright © 2026 Nothing Yuan Can Do</span>
-      <button id="theme-toggle" type="button" aria-label="切换主题">跟随系统主题</button>
-    </footer>
-
-    <script src="./theme.js"></script>
-  </body>
-</html>
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <span class="prev">
+      <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="prev">← 上一页</a>
+    </span>
+  {% endif %}
+  {% if paginator.next_page %}
+    <span class="next">
+      <a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="next">下一页 →</a>
+    </span>
+  {% endif %}
+</div>

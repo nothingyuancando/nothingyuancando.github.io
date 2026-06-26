@@ -1,0 +1,49 @@
+name: "Nothing Yuan"
+description: "Nothing Yuan 的个人技术博客"
+
+avatar: /images/avatar.svg
+favicon: /images/favicon.svg
+
+navigation:
+  - name: 首页
+    url: /
+  - name: 关于
+    url: /about
+  - name: 分类
+    url: /tags
+
+paginate: 8
+excerpt_separator: <!-- more -->
+
+footer-links:
+  email:
+  github: nothingyuancando
+  rss: feed
+
+footer-text: Copyright (c) 2026 Nothing Yuan
+
+url: https://nothingyuancando.github.io
+baseurl: ""
+
+permalink: /:title/
+paginate_path: /page:num/
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: "highlight"
+
+sass:
+  style: :expanded
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
