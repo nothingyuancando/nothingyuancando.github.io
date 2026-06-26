@@ -21,4 +21,4 @@ permalink: /about/
 
 GitHub: [nothingyuancando](https://github.com/nothingyuancando)
 
-邮箱可以之后改成你的真实邮箱。
+Email: [nothingyuancando@outlook.com](mailto:nothingyuancando@outlook.com)
