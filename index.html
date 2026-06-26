@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Nothing Yuan Can Do 的个人网站，记录技术、项目和思考。" />
+    <meta name="theme-color" content="#fafafa" />
+    <title>Nothing Yuan Can Do</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="site-title" href="./index.html">Nothing Yuan Can Do</a>
+        <p class="site-subtitle">个人技术博客 / 项目记录 / 学习笔记</p>
+        <nav class="site-nav" aria-label="主导航">
+          <a class="active" href="./index.html">首页</a>
+          <a href="./about.html">关于</a>
+          <a href="./categories.html">分类</a>
+          <a href="https://github.com/nothingyuancando" target="_blank" rel="noreferrer">GitHub</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="intro" aria-labelledby="intro-title">
+        <h1 id="intro-title">欢迎来到我的个人网站。</h1>
+        <p>
+          这里会放一些技术学习笔记、项目复盘、工具搭建记录，以及正在做的作品。先把站点搭起来，再让它慢慢长出自己的内容。
+        </p>
+      </section>
+
+      <section aria-labelledby="posts-title">
+        <div class="section-title">
+          <h2 id="posts-title">最新文章</h2>
+          <span>Latest Posts</span>
+        </div>
+
+        <article class="post-item">
+          <h3><a href="./posts/build-github-pages-site.html">零基础搭建自己的 github.io 个人网站</a></h3>
+          <div class="post-meta">
+            <time datetime="2026-06-26">2026-06-26</time>
+            <a href="./categories.html#tutorial">tutorial</a>
+          </div>
+          <p>
+            从空仓库开始，用最简单的静态文件搭建一个可以直接部署到 GitHub Pages 的个人网站。
+          </p>
+          <a class="read-more" href="./posts/build-github-pages-site.html">Read More</a>
+        </article>
+
+        <article class="post-item">
+          <h3><a href="./posts/portfolio-notes.html">个人作品集应该放些什么</a></h3>
+          <div class="post-meta">
+            <time datetime="2026-06-26">2026-06-26</time>
+            <a href="./categories.html#notes">notes</a>
+          </div>
+          <p>
+            作品集不只是项目链接列表，更像一份持续更新的工作档案：讲清楚问题、过程、取舍和结果。
+          </p>
+          <a class="read-more" href="./posts/portfolio-notes.html">Read More</a>
+        </article>
+
+        <article class="post-item">
+          <h3><a href="./posts/projects-index.html">我的项目索引</a></h3>
+          <div class="post-meta">
+            <time datetime="2026-06-26">2026-06-26</time>
+            <a href="./categories.html#projects">projects</a>
+          </div>
+          <p>
+            把做过的项目集中整理起来，方便以后补充截图、仓库地址、在线演示和复盘文章。
+          </p>
+          <a class="read-more" href="./posts/projects-index.html">Read More</a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Copyright © 2026 Nothing Yuan Can Do</span>
+      <button id="theme-toggle" type="button" aria-label="切换主题">跟随系统主题</button>
+    </footer>
+
+    <script src="./theme.js"></script>
+  </body>
+</html>
