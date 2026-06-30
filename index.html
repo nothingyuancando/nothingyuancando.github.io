@@ -83,17 +83,33 @@ title: Portfolio
       </article>
 
       <article class="project-card">
-        <a class="project-media" href="https://github.com/nothingyuancando/QuantPilot" aria-label="查看北京旅游 Agent 项目">
+        <a class="project-media" href="https://github.com/nothingyuancando/QuantPilot" aria-label="查看 QuantPilot 项目">
+          <img src="{{ site.baseurl }}/images/projects/quantpilot.svg" alt="QuantPilot AI quant research workspace cover">
+        </a>
+        <div class="project-body">
+          <p class="project-kicker">QuantPilot</p>
+          <h3>AI 量化投研工作台</h3>
+          <p>
+            QuantPilot 面向量化投研、金融数据分析和可视化看板生成。用户用自然语言提出研究问题后，系统会生成 run plan、读取真实市场数据、产出独立 Next.js 工作空间，并通过数据证据、产物契约、自动验证、视觉检查、评测和运维链路把 AI 生成结果收敛到可追溯、可检查、可修复。
+          </p>
+          <div class="tag-row">
+            <span>Next.js</span><span>FastAPI</span><span>TimescaleDB</span><span>Agent Runtime</span><span>Evaluation</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <a class="project-media" href="https://github.com/nothingyuancando/QuantPilot/tree/travel-agent-migration-develop" aria-label="查看 QuantPilot Travel Agent 项目">
           <img src="{{ site.baseurl }}/images/projects/beijing-travel-agent.jpg" alt="Beijing travel scene">
         </a>
         <div class="project-body">
-          <p class="project-kicker">QuantPilot / 北京旅游 Agent</p>
-          <h3>美团黑客松路线规划项目</h3>
+          <p class="project-kicker">QuantPilot / travel branch</p>
+          <h3>北京旅游 Agent 路线规划</h3>
           <p>
-            项目从量化平台迁移为北京旅游 Agent，面向北京本地游玩生成可解释、可调整的路线。系统把自然语言需求解析成区域、时长、预算、餐饮和偏好约束，再结合 POI、UGC 特征、通勤边和预生成路线库完成规划。模型负责理解和解释，路线事实由数据和规则约束。
+            travel 分支是独立的北京本地游玩规划项目，面向黑客松场景把自然语言需求解析成区域、时长、预算、餐饮和偏好约束，再结合 POI、UGC 特征、通勤边和预生成路线库生成可解释、可调整的路线。模型负责理解和表达，路线事实由数据、规则和重排链路约束。
           </p>
           <div class="tag-row">
-            <span>Next.js</span><span>PostgreSQL</span><span>LLM Agent</span><span>Route Planning</span>
+            <span>Next.js</span><span>PostgreSQL</span><span>LLM Agent</span><span>Route Planning</span><span>POI</span>
           </div>
         </div>
       </article>
