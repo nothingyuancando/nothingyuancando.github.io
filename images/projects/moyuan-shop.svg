@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Moyuan Shop cover</title>
+  <desc id="desc">A product image generation workspace visual.</desc>
+  <rect width="1200" height="760" fill="#eef4f8"/>
+  <rect x="86" y="82" width="1028" height="596" rx="30" fill="#1f2933"/>
+  <rect x="136" y="136" width="352" height="488" rx="22" fill="#f8fbfd"/>
+  <rect x="532" y="136" width="532" height="488" rx="22" fill="#ffffff"/>
+  <rect x="178" y="184" width="268" height="268" rx="18" fill="#dbeafe"/>
+  <path d="M222 404l80-96 58 68 38-42 48 70H222z" fill="#4f8fbc"/>
+  <circle cx="384" cy="238" r="34" fill="#f4b860"/>
+  <rect x="178" y="498" width="228" height="18" rx="9" fill="#1f2933"/>
+  <rect x="178" y="538" width="164" height="14" rx="7" fill="#7b8794"/>
+  <rect x="590" y="190" width="416" height="54" rx="16" fill="#eef4f8"/>
+  <rect x="622" y="210" width="248" height="14" rx="7" fill="#7b8794"/>
+  <rect x="590" y="292" width="122" height="122" rx="18" fill="#f2d7b6"/>
+  <rect x="740" y="292" width="122" height="122" rx="18" fill="#c7e2d1"/>
+  <rect x="890" y="292" width="122" height="122" rx="18" fill="#d6d6f5"/>
+  <rect x="590" y="468" width="416" height="18" rx="9" fill="#1f2933"/>
+  <rect x="590" y="514" width="306" height="14" rx="7" fill="#7b8794"/>
+  <rect x="590" y="552" width="356" height="14" rx="7" fill="#7b8794"/>
+</svg>
