@@ -38,7 +38,7 @@ redirect_from:
 >
 > “天行健，君子以自强不息”  
 >
-> <div align="right">—— 《The Book of Changes》</div>  
+> <div align="right">—— The Book of Changes</div>  
 > <div align="right">—— 《周易》</div>
 
 
@@ -47,7 +47,6 @@ redirect_from:
         <div class="text">
             <p>I am <b>Yuan Tsai (蔡远)</b>, an incoming master's student in Electronic Information at <a href='https://www.hhu.edu.cn/'>Hohai University</a> in Nanjing, China. I will begin my graduate study in September 2026.<br><br>
             I received my bachelor's degree in <b>Computer Science and Technology</b> from <a href='https://www.ysu.edu.cn/'>Yanshan University</a> in Qinhuangdao, Hebei Province. I enrolled in September 2022 and graduated in June 2026.<br><br>
-            <b>Education:</b> M.Eng. in Electronic Information, Hohai University (expected enrollment: September 2026); B.Eng. in Computer Science and Technology, Yanshan University (September 2022 - June 2026).<br><br>
             My interests include <b>artificial intelligence</b>, <b>large language model applications</b>, <b>AI agents</b>, <b>full-stack development</b>, and <b>developer infrastructure</b>. I enjoy turning ideas into practical software systems and maintaining open-source projects on <a href='https://github.com/nothingyuancando'>GitHub</a>.<br><br></p>
         </div>
         <div class="image">
@@ -61,12 +60,9 @@ redirect_from:
 # 🔥 News
 - *2026.09*: I will begin my master's study in Electronic Information at Hohai University.
 
-<p><b>GitHub:</b> <a href='https://github.com/nothingyuancando'>github.com/nothingyuancando</a><br>
-<b>Email:</b> <a href='mailto:nothingyuancando@outlook.com'>nothingyuancando@outlook.com</a></p>
-
 # 💻 Projects
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/projects/modelport-dashboard.png' alt='ModelPort dashboard' width='100%'></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/projects/modelport-dashboard.png' alt='ModelPort dashboard' width='70%'></div></div>
 <div class='paper-box-text' markdown='1'>
 ---
 - **[ModelPort](https://github.com/nothingyuancando/ModelPort)**. A self-hosted model gateway for Claude Code and VS Code Claude, with provider routing, authentication, usage tracking, and an operations dashboard.<br>
@@ -95,5 +91,5 @@ Next.js, React, TypeScript, Supabase, LangChain, and LangGraph.
 </div></div>
 
 # 📖 Educations
-- *2026.09 - now*, M.Eng. in Electronic Information, [Hohai University](https://www.hhu.edu.cn/), Nanjing.
+- *2026.09 -        *, M.Eng. in Electronic Information, [Hohai University](https://www.hhu.edu.cn/), Nanjing.
 - *2022.09 - 2026.06*, B.Eng. in Computer Science and Technology, [Yanshan University](https://www.ysu.edu.cn/), Qinhuangdao, Hebei.
