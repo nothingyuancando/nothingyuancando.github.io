@@ -3,6 +3,7 @@ permalink: /
 title: ""
 excerpt: ""
 author_profile: true
+lang: en
 redirect_from: 
   - /about/
   - /about.html
@@ -77,8 +78,6 @@ redirect_from:
     </div>
 </body>
 
-
-
 # 🔥 News
 - *2026.09*: I will begin my master's study in Electronic Information at Hohai University.
 
@@ -113,5 +112,5 @@ Next.js, React, TypeScript, Supabase, LangChain, and LangGraph.
 </div></div>
 
 # 📖 Educations
-- *2026.09 -        *, M.Eng. in Electronic Information, [Hohai University](https://www.hhu.edu.cn/), Nanjing.
+- *2026.09 -*, M.Eng. in Electronic Information, [Hohai University](https://www.hhu.edu.cn/), Nanjing.
 - *2022.09 - 2026.06*, B.Eng. in Computer Science and Technology, [Yanshan University](https://www.ysu.edu.cn/), Qinhuangdao, Hebei.

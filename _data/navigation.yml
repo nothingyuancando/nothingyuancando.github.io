@@ -14,3 +14,19 @@ main:
 
   - title: "Contact"
     url: "/#contact"
+
+zh:
+  - title: "关于"
+    url: "/zh/#about-me"
+
+  - title: "教育经历"
+    url: "/zh/#education"
+
+  - title: "兴趣"
+    url: "/zh/#interests"
+
+  - title: "项目"
+    url: "/zh/#projects"
+
+  - title: "联系"
+    url: "/zh/#contact"
