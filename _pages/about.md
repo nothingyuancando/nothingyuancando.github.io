@@ -30,6 +30,28 @@ redirect_from:
             display: flex;
             justify-content: flex-end;
         }
+        @media (min-width: 768px) {
+            .project-box {
+                flex-wrap: nowrap;
+                gap: 1.25rem;
+            }
+            .project-box .paper-box-image {
+                flex: 0 0 27%;
+                min-width: 0;
+                max-width: 27%;
+            }
+            .project-box .paper-box-image > div {
+                width: 100%;
+            }
+            .project-box .paper-box-image img {
+                width: 100%;
+            }
+            .project-box .paper-box-text {
+                flex: 1;
+                max-width: none;
+                padding-left: 0;
+            }
+        }
     </style>
 </head>
 
@@ -62,28 +84,28 @@ redirect_from:
 
 # 💻 Projects
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/projects/modelport-dashboard.png' alt='ModelPort dashboard' width='70%'></div></div>
+<div class='paper-box project-box'><div class='paper-box-image'><div><img src='images/projects/modelport-dashboard.png' alt='ModelPort dashboard' width='100%'></div></div>
 <div class='paper-box-text' markdown='1'>
 ---
 - **[ModelPort](https://github.com/nothingyuancando/ModelPort)**. A self-hosted model gateway for Claude Code and VS Code Claude, with provider routing, authentication, usage tracking, and an operations dashboard.<br>
 Python, TypeScript, React, PostgreSQL, and Docker.
 </div></div>
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/projects/quantpilot-home.png' alt='QuantPilot workspace' width='100%'></div></div>
+<div class='paper-box project-box'><div class='paper-box-image'><div><img src='images/projects/quantpilot-home.png' alt='QuantPilot workspace' width='100%'></div></div>
 <div class='paper-box-text' markdown='1'>
 ---
 - **[QuantPilot](https://github.com/nothingyuancando/QuantPilot)**. An AI workspace for quantitative research, financial data analysis, market-data services, workspace validation, and traceable research outputs.<br>
 TypeScript, Next.js, Python, FastAPI, PostgreSQL, and TimescaleDB.
 </div></div>
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/projects/mamoji-dashboard.png' alt='Mamoji dashboard' width='100%'></div></div>
+<div class='paper-box project-box'><div class='paper-box-image'><div><img src='images/projects/mamoji-dashboard.png' alt='Mamoji dashboard' width='100%'></div></div>
 <div class='paper-box-text' markdown='1'>
 ---
 - **[Mamoji](https://github.com/nothingyuancando/Mamoji)**. A business operations platform for small teams, covering finance, budgets, cash flow, receipts, tax records, human resources, payroll, and audit logs.<br>
 Java, Spring Boot, Next.js, PostgreSQL, MinIO, and Docker.
 </div></div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AI Learning</div><img src='https://opengraph.githubassets.com/1/nothingyuancando/Personalized-learning-platform' alt='Personalized Learning Platform' width='100%'></div></div>
+<div class='paper-box project-box'><div class='paper-box-image'><div><div class="badge">AI Learning</div><img src='https://opengraph.githubassets.com/1/nothingyuancando/Personalized-learning-platform' alt='Personalized Learning Platform' width='100%'></div></div>
 <div class='paper-box-text' markdown='1'>
 ---
 - **[Personalized Learning Platform](https://github.com/nothingyuancando/Personalized-learning-platform)**. An AI-assisted learning platform that connects learning goals, structured notes, Feynman explanations, quizzes, flashcards, knowledge graphs, and weakness analysis.<br>
